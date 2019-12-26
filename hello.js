@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
       $.ajax({
-              url: "http://52.188.138.178/products/api/products",
+              url: "http://52.188.138.178/v1/products/api/products",
                       headers: { 'Ocp-Apim-Subscription-Key': '5489c2b18b3d4092bf3768fb36b99cc5;product=unlimited' }
                           }).then(function(data) {
                                  $('.productos').append(data[Math.floor(Math.random()*3)]);
