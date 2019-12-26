@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	    $.ajax({
-		            url: "http://52.188.138.178/customer/api/customers",
+		            url: "http://52.188.138.178/api/customers/api/customers",
 		            headers: { 'Ocp-Apim-Subscription-Key': '4f6bce226bea4eaf9bf6f2ecb2bb1916;product=unlimited' }
 		        }).then(function(data) {
 				       $('.clientes').append(data[Math.floor(Math.random()*3)]);
